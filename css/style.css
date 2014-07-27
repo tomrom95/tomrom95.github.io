@@ -339,15 +339,22 @@ body {
 	min-height:100%;
 }
 
-	.box{
+	.box a:link, a:visited{
+		display: block;
+		background-color: #ffffff;
 		font-size:20px;
+		color: #4169e1;
 		width:100px;
 		height:40px;
 		line-height: 15px;
-		padding:10px;
+		padding:12px;
 		margin:0 auto;
-		border: 2px solid white;
+		text-decoration: none;
 	}
+	.box a:hover, a:active{
+		background-color: #eaeffc;
+	}
+
 
 	.title-row {
 		font-size: 45px;

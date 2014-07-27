@@ -93,7 +93,7 @@ $(document).ready(function(e) {
 * = Gallery width *
 ******************/
 $(function() {
-	var pause = 20; // will only process code within delay(function() { ... }) every 100ms.
+	var pause = 100; // will only process code within delay(function() { ... }) every 100ms.
 	$(window).resize(function() {
 		delay(function() {
 				var gallery_images = $('#slide-3 img');
@@ -207,7 +207,7 @@ jQuery(document).ready(function ($) {
 		e.preventDefault();
 		dataslide = $(this).attr('data-slide');
 		goToByScroll(dataslide);
-		$(".nav-collapse").collapse('hide');
+		
 	});
 	
 	//When the user clicks on the navigation links, get the data-slide attribute value of the link and pass that variable to the goToByScroll function
@@ -216,6 +216,34 @@ jQuery(document).ready(function ($) {
 		dataslide = $(this).attr('data-slide');
 		goToByScroll(dataslide);
 		$(".nav-collapse").collapse('hide');
+	});
+});
+
+/*************
+* = BRAND *
+*************/
+jQuery(document).ready(function ($) {
+	//Cache some variables
+	var brand = $('.navbar-brand');
+	slide = $('.slide');
+	mywindow = $(window);
+	htmlbody = $('html,body');
+	
+	//Create a function that will be passed a slide number and then will scroll to that slide using jquerys animate. The Jquery
+	//easing plugin is also used, so we passed in the easing method of 'easeInOutQuint' which is available throught the plugin.
+	function goToByScroll(dataslide) {
+		var offset_top = ( dataslide == 1 ) ? '0px' : $('.slide[data-slide="' + dataslide + '"]').offset().top;
+			
+		htmlbody.stop(false, false).animate({
+			scrollTop: offset_top
+		}, 1500, 'easeInOutQuart');
+	}
+	
+	//When the user clicks on the navigation links, get the data-slide attribute value of the link and pass that variable to the goToByScroll function
+	brand.click(function (e) {
+		e.preventDefault();
+		dataslide = 1;
+		goToByScroll(dataslide);
 	});
 });
 
