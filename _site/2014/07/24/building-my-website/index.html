@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head lang="en">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+  
+  <title>Building My Website</title> 
+  <meta name="description" content="Tommy Romano's Personal Site" />     
+  <meta name="keywords" content="Thomas Romano, Tommy Romano, engineer, programming, research, about, duke university">
+  <meta property="og:title" content="">
+
+  <link rel="stylesheet" type="text/css" href="tomrom95.github.io/css/bootstrap.min.css">
+  <link rel="stylesheet" href="tomrom95.github.io/css/jquery.fancybox-v=2.1.5.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="tomrom95.github.io/css/font-awesome.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" type="text/css" href="tomrom95.github.io/css/postStyle.css">  
+  
+  <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  
+  
+  <link rel="prefetch" href="tomrom95.github.io/images/zoom.png">
+  <link rel="shortcut icon" href="tomrom95.github.io/images/logo.ico" >
+    
+</head>
+
+<body>
+
+  <div class = "titleBar">
+    <h1> Building My Website </h1>
+    <p><em>July 24, 2014</em><p>
+  </div>
+  <div class = "postBody">
+    <div class= "postContent">
+      <p>This website (who's domain name will likely change from tomrom95.github.io to a custom name) was my first venture in to web development. I started out with Ruby and Ruby on Rails, thinking I would do a lot of back-end work. However, most of the RoR functionality was unnecessary if I wanted to build just a static site.</p>
+
+<p>So, I turned to Jekyll, which is a simplestatic site generator supported by GitHub. Ruby was still involved somewhat, since Jekyll is a Ruby gem, but this approach was much more targeted towards what I was trying to accomplish. With Jekyll, I was able to get a simple version of the site up within a few days. Then, like always, I started to overdo it and delve into the world of Bootstrap templates. I finally found one, called Munter, which is a dynamic one page site for companies. I really liked the functionality so I decided to strip it down and make it more suitable for a personal blog. Most of the animation was given in the template, but I added a lot of tweaks to fix some errors in the template and format it to my liking. Originally, the Munter template had FancyBox used to view a portfolio, but I changed it up so that it would actually become the site of my blog posts.</p>
+
+<p>Anyway, I hope you enjoy the site. I will keep adding improvements and functionality in the coming weeks.</p>
+
+    </div>
+  </div>
+
+</body>
+
+  <!-- SCRIPTS -->
+
+  <script src="tomrom95.github.io/js/html5shiv.js"></script>
+  <script src="tomrom95.github.io/js/jquery-1.10.2.min.js"></script>
+  <script src="tomrom95.github.io/js/jquery-migrate-1.2.1.min.js"></script>
+  <script src="tomrom95.github.io/js/bootstrap.min.js"></script>
+  <script src="tomrom95.github.io/js/jquery.easing.1.3.js"></script>
+  <script src="tomrom95.github.io/js/script.js"></script>
+  <script type="text/javascript" src="tomrom95.github.io/css/jquery.fancybox.pack-v=2.1.5.js"></script>
+  
+  <!-- fancybox init -->
+  <script>
+  $(document).ready(function(e) {
+    var lis = $('.nav > li');
+    menu_focus( lis[0], 1 );
+    
+    $(".fancybox").fancybox({
+      padding: 10,
+      helpers: {
+        overlay: {
+          locked: false
+        }
+      }
+    });
+  
+  });
+  </script>
+
+</html>

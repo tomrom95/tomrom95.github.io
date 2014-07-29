@@ -1,0 +1,80 @@
+.font-thin {
+	font-family: "Titillium Web", sans-serif;
+	font-weight: 200;
+}
+
+.font-semibold {
+	font-family: "Titillium Web", sans-serif;
+	font-weight: 600;
+}
+
+.font-light {
+	font-family: "Titillium Web", sans-serif;
+	font-weight: 300;
+}
+
+* {
+	position: relative;
+}
+
+.breaker {
+	clear: both;
+	font-size: 1px;
+	line-height: 1px;
+	height: 1px;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background-color: #2f2f2f;
+	font-family: "Titillium Web", sans-serif;
+	font-weight: normal;
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased !important;
+	color: #ffffff;
+}
+
+.justify-text {
+	text-align: justify;
+}
+
+.titleBar {
+	text-align: center;
+	margin:0 auto;
+	padding-top:20px;
+	padding-bottom:20px;
+	background-color:#e74c3c;
+}
+
+.titleBar h1{
+	font-size:45px;
+	font-family: "Titillium Web", sans-serif;
+	font-weight: 600;
+}
+
+
+.postBody {
+
+	font-family: "Titillium Web", sans-serif;
+	font-weight: 300;
+
+	background-color: #484848;
+	padding-top:50px;
+	padding-bottom:50px;
+	min-height:100%;
+	width:100%;
+}
+
+.postContent{
+	text-align:left;
+	margin-left: auto;
+    margin-right: auto;
+    width:60%;
+}
+
+
+
