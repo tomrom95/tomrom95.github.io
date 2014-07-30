@@ -7,6 +7,7 @@
  * URL: http://blacktie.co
 
  * Edited and gutted by Tommy Romano
+ * URL: tomrom95.github.io
  */
  
 .font-thin {
@@ -252,6 +253,7 @@ body {
 }
 
 #slide-1 {
+	text-shadow: black 0.1em 0.1em 0.2em;
 	background-image: url('../images/background.jpg');
 	color: #ffffff;
     -webkit-background-size: 100%;
