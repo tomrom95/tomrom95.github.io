@@ -13,7 +13,7 @@
 		<div class="row">
 			{% for post in site.posts %}
 				<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox fancybox.iframe" href="{{post.url}}"><img class="thumb" src="{{post.image}}" alt=""></a>
-				<h2><span>{{post.title}}</span><h2>
+				<div class="caption">{{post.title}}</div>
 				</div>
 
 			{% endfor %}
