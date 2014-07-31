@@ -7,6 +7,9 @@
 	
 	<!-- === SLide 3 - Portfolio -->
 	<div class="slide story" id="slide-3" data-slide="3">
+		<div class="titleBar">
+			<div class="font-thin">My <span class="font-semibold">Blog</span></div>
+		</div>
 		<div class="row">
 			{% for post in site.posts %}
 				<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox fancybox.iframe" href="{{post.url}}"><img class="thumb" src="{{post.image}}" alt=""></a></div>

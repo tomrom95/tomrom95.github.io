@@ -29,45 +29,6 @@
 	position: relative;
 }
 
-
-.post {
-	background-position: center center;
-	background-repeat: no-repeat;
-	padding-bottom: 65px;
-	padding-top: 50px;
-	text-align: center;
-	background-color: #484848;
-	color: #e4e6e5;
-	width:100%;
-	min-height:100%;
-
-}
-#post-title{
-	margin:0 auto;
-	padding-top:20px;
-	padding-bottom:20px;
-	background-color:#e74c3c;
-	margin-top:-50px;
-	margin-left: -600px;
- 	margin-right: -600px;
-	overflow-x: hidden;
-	overflow-y: hidden;
-}
-#post-title p{
-	font-style: italic;
-}
-
-#post-content{
-	padding-top:50px;
-}
-#post-content p{
-	margin-left: auto;
-    margin-right: auto;
-    text-align:left;
-	width:80%;
-
-}
-
 .breaker {
 	clear: both;
 	font-size: 1px;
@@ -169,11 +130,11 @@ body {
 }
 
 #special-active-menu-2 {
-	background-color: #4169E1 !important;
+	background-color: #214cce !important;
 }
 
 #special-active-menu-3 {
-	background-color: #e74c3c !important;
+	background-color: #d62c1a !important;
 }
 
 #special-active-menu-4 {
@@ -220,11 +181,11 @@ body {
 
 	
 	.nav li[data-slide="2"] {
-		background-color: #4169E1;
+		background-color: #214cce;
 	}
 	
 	.nav li[data-slide="3"] {
-		background-color: #e74c3c;
+		background-color: #d62c1a;
 	}	
 
 	.nav li[data-slide="4"] {
@@ -414,12 +375,7 @@ body {
 		font-size: 80px;
 		color: white;
 	}
-	
-@media(min-width: 767px) {
-	#slide-2{
-		
-	}
-}
+
 
 @media (max-width: 767px) {
 	.title-row {
@@ -454,15 +410,23 @@ body {
 	overflow: hidden;
 	padding: 0;
 	text-align: left;
-	width: 100%;c
+	width: 100%;
 }
 	
 	#slide-3 .col-12 {
 		display: inline-block;
-		height: 451px;
+		height: 351px;
 		margin: 0;
 		padding: 0;
-		width: 452px;
+		width: 352px;
+	}
+	#slide-3 .titleBar {
+		font-size: 45px;
+		text-align: center;
+		margin:0 auto;
+		padding-top:50px;
+		padding-bottom:15px;
+		background-color:#e74c3c;
 	}
 
 	#slide-3 a,
@@ -500,6 +464,9 @@ body {
 }
 	
 @media (max-width: 767px) {
+	#slide-3 .titleBar{
+		font-size:34px;
+	}
 	#slide-3 .col-12 {
 		width: 100%;
 	}
@@ -516,15 +483,9 @@ body {
 		min-height:100%;
 	}
 }
-@media (max-width: 767px) {
-	.with-hover-text{
-		margin-bottom: 2em;
-		margin-top: 1em;
-	}
-}
 	
 	#contact-row-4 {
-		padding-top: 125px;
+		padding-top: 100px;
 	}
 	
 	#contact-row-4 .col-6 {
@@ -551,6 +512,15 @@ body {
 		display: none;
 		font-size: 20px;
 	}
+@media (max-width: 767px) {
+	.with-hover-text{
+		margin-bottom: 2em;
+		margin-top: 1em;
+	}
+	#contact-row-4 {
+		padding-top: 20px;
+	}
+}
 
 
 #lightbox-out {
