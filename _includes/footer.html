@@ -12,10 +12,9 @@
 		</div>
 		<div class="row">
 			{% for post in site.posts %}
-				<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox fancybox.iframe" href="{{post.url}}"><img class="thumb" src="{{post.image}}" alt=""></a>
-				<div class="caption">{{post.title}}</div>
+				<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox fancybox.iframe" href="{{post.url}}"><img class="thumb" src="{{post.image}}" alt=""><div class="caption" >{{post.title}}</div></a>
+				
 				</div>
-
 			{% endfor %}
 		</div>
 	</div>
