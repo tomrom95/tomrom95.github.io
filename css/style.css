@@ -304,7 +304,7 @@ body {
 	min-height:100%;
 }
 
-	.box a:link, a:visited{
+	.cv a:link, a:visited{
 		display: block;
 		background-color: #ffffff;
 		font-size:20px;
@@ -316,7 +316,7 @@ body {
 		margin:0 auto;
 		text-decoration: none;
 	}
-	.box a:hover, a:active{
+	.cv a:hover{
 		background-color: #eaeffc;
 	}
 
