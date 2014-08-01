@@ -1,4 +1,5 @@
 
+
 $(document).ready(function(e) {
 	$('.with-hover-text, .regular-link').click(function(e){
 		e.stopPropagation();
